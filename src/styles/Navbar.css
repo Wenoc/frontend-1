@@ -1,3 +1,61 @@
+.navContainer {
+  height: 120px;
+  background-color: #B50014;
+}
+
 .nav {
-  color: red;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.logoPlace {
+  position: relative;
+  width: 150px;
+  height: 80px;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background-color: #B50014;
+  border-radius: 50%;
+  border: 12px solid #B50014;
+  z-index: 2;
+}
+
+.downloadLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.opentimeContainer {
+  background-color: #252525;
+  height: 30px;
+}
+
+.opentime {
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  color: white;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.opentime .bold {
+  font-weight: 700;
+  margin: 0 6px;
 }/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,88 @@
+@import "./Variables/Variables.scss";
+
+.section1Container {
+  height: 680px;
+  width: 100%;
+  background-color: $secondary-color;
+}
+
+.section1 {
+  color: white;
+  height: 680px;
+  gap: 150px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+
+  .left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .title {
+      font-weight: 700;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      font-weight: 700;
+      font-size: 22px;
+    }
+
+    .content {
+      margin-top: 32px;
+      margin-bottom: 64px;
+      font-weight: 300;
+      line-height: 24px;
+
+      span {
+        margin-top: 16px;
+        display: block;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+
+      .btn {
+        background-color: $red-2;
+        height: 46px;
+        width: 170px;
+        border-radius: 40px;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+
+    .otherImgs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}

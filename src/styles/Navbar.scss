@@ -1,5 +1,64 @@
 @import "./Variables/Variables.scss";
 
-.nav{
-    color: red;
+.navContainer {
+  height: 120px;
+  background-color: $primary-color;
+}
+.nav {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.logoPlace {
+  position: relative;
+  width: 150px;
+  height: 80px;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background-color: $primary-color;
+  border-radius: 50%;
+  border: 12px solid $primary-color;
+  z-index: 2;
+}
+
+.downloadLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.opentimeContainer {
+  background-color: #252525;
+  height: 30px;
+}
+
+.opentime {
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  color: white;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  .bold {
+    font-weight: 700;
+    margin: 0 6px;
+  }
 }
