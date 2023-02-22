@@ -3,12 +3,11 @@
 }
 
 .slider {
-  background: url("../assets/slider1.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   height: 100%;
-  background-color: blue;
+  background-color: #0d0d0d;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -51,6 +50,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.sliderButtonsContainer img:hover {
+  cursor: pointer;
 }
 .sliderButtonsContainer .sliderButtons {
   display: flex;
