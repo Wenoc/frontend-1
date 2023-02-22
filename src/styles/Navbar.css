@@ -1,6 +1,6 @@
 .navContainer {
   height: 120px;
-  background-color: #B50014;
+  background-color: #b50014;
 }
 
 .nav {
@@ -27,9 +27,9 @@
   height: 150px;
   width: 150px;
   position: absolute;
-  background-color: #B50014;
+  background-color: #b50014;
   border-radius: 50%;
-  border: 12px solid #B50014;
+  border: 12px solid #b50014;
   z-index: 2;
 }
 
