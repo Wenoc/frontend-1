@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Parallax from "./components/Parallax";
 import Section1 from "./components/Section1";
@@ -20,6 +21,7 @@ function App() {
       <Section4 />
       <Parallax />
       <Section5 />
+      <Footer />
     </>
   );
 }
