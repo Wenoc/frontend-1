@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import line from "../assets/section3/line.png";
+import line from "../assets/Section3/line.png";
 
-import img1 from "../assets/section3/1.png";
-import img2 from "../assets/section3/2.png";
-import img3 from "../assets/section3/3.png";
-import img4 from "../assets/section3/4.png";
+import img1 from "../assets/Section3/1.png";
+import img2 from "../assets/Section3/2.png";
+import img3 from "../assets/Section3/3.png";
+import img4 from "../assets/Section3/4.png";
 import "../styles/Section3.css";
 
 function Section3() {
