@@ -1,0 +1,26 @@
+.parallax {
+  height: 540px;
+  background: url("/src/assets/parallax.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+.parallax .text {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+.parallax .btn {
+  height: 46px;
+  width: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+.parallax .btn:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=Parallax.css.map */
