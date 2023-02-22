@@ -1,12 +1,11 @@
 import React from "react";
-import logo from "../assets/logo.png";
-import line from "../assets/Section3/line.png";
 
 import img1 from "../assets/Section3/1.png";
 import img2 from "../assets/Section3/2.png";
 import img3 from "../assets/Section3/3.png";
 import img4 from "../assets/Section3/4.png";
 import "../styles/Section3.css";
+import Line from "./Line";
 
 function Section3() {
   return (
@@ -32,11 +31,7 @@ function Section3() {
         </p>
 
         <div className="btn">Das Handwerk</div>
-        <div className="line">
-          <img src={line} alt="" />
-          <img src={logo} height={70} width={70} alt="" />
-          <img src={line} alt="" />
-        </div>
+        <Line />
         <div className="images">
           <img src={img1} alt="" />
           <img src={img2} alt="" />
