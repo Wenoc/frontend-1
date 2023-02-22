@@ -1,5 +1,8 @@
 import React from "react";
 import mainImg from "../assets/section1/mainImg.png";
+import otherImg1 from "../assets/section1/otherImg1.png";
+import otherImg2 from "../assets/section1/otherImg2.png";
+import otherImg3 from "../assets/section1/otherImg3.png";
 import "../styles/Section1.css";
 
 function Section1() {
@@ -32,9 +35,9 @@ function Section1() {
         <div className="right">
           <img src={mainImg} alt="main img" />
           <div className="otherImgs">
-            <img src="src/assets/section1/otherImg1.png" alt="" />
-            <img src="src/assets/section1/otherImg2.png" alt="" />
-            <img src="src/assets/section1/otherImg3.png" alt="" />
+            <img src={otherImg1} alt="" />
+            <img src={otherImg2} alt="" />
+            <img src={otherImg3} alt="" />
           </div>
         </div>
       </div>

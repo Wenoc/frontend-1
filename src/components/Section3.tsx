@@ -1,4 +1,11 @@
 import React from "react";
+import logo from "../assets/logo.png";
+import line from "../assets/section3/line.png";
+
+import img1 from "../assets/section3/1.png";
+import img2 from "../assets/section3/2.png";
+import img3 from "../assets/section3/3.png";
+import img4 from "../assets/section3/4.png";
 import "../styles/Section3.css";
 
 function Section3() {
@@ -26,15 +33,15 @@ function Section3() {
 
         <div className="btn">Das Handwerk</div>
         <div className="line">
-          <img src="/src/assets/Section3/line.png" alt="" />
-          <img src="/src/assets/logo.png" height={70} width={70} alt="" />
-          <img src="/src/assets/Section3/line.png" alt="" />
+          <img src={line} alt="" />
+          <img src={logo} height={70} width={70} alt="" />
+          <img src={line} alt="" />
         </div>
         <div className="images">
-          <img src="/src/assets/Section3/1.png" alt="" />
-          <img src="/src/assets/Section3/2.png" alt="" />
-          <img src="/src/assets/Section3/3.png" alt="" />
-          <img src="/src/assets/Section3/4.png" alt="" />
+          <img src={img1} alt="" />
+          <img src={img2} alt="" />
+          <img src={img3} alt="" />
+          <img src={img4} alt="" />
         </div>
       </div>
     </div>

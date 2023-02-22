@@ -1,0 +1,44 @@
+.section4Container {
+  height: 700px;
+  background-color: #a62120;
+}
+
+.section4 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section4 .imgPlace {
+  position: relative;
+  width: 100%;
+}
+.section4 .imgPlace .img {
+  height: 100%;
+  width: 1000px;
+  background: url("../assets/section4.jpg") no-repeat;
+  position: absolute;
+  left: -410px;
+}
+.section4 .right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 160px;
+  color: white;
+}
+.section4 .right .title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.section4 .right .subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+.section4 .right .content {
+  font-weight: 300;
+}/*# sourceMappingURL=Section4.css.map */
