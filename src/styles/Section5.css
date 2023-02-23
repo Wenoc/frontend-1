@@ -195,6 +195,9 @@
     max-width: 400px;
     gap: 48px;
   }
+  .section5 .sec1 .right .text {
+    line-height: 1.3;
+  }
   .section5 .sec2 {
     flex-direction: column;
   }
