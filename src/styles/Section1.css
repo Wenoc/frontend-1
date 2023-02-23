@@ -73,4 +73,38 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+
+@media (max-width: 1200px) {
+  .section1Container {
+    height: auto;
+    padding: 36px 0;
+  }
+  .section1 {
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+  .right {
+    padding: 4%;
+  }
+  .right .main {
+    width: 100%;
+    max-width: 532px;
+  }
+  .right .otherImgs {
+    width: 100%;
+  }
+  .right .otherImgs img {
+    min-width: 50px;
+  }
+  .section1 .left {
+    padding: 0 8%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .section1 .left span {
+    text-align: center;
+  }
 }/*# sourceMappingURL=Section1.css.map */

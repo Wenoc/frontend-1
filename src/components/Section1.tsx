@@ -33,7 +33,7 @@ function Section1() {
           </div>
         </div>
         <div className="right">
-          <img src={mainImg} alt="main img" />
+          <img src={mainImg} alt="main img" className="main" />
           <div className="otherImgs">
             <img src={otherImg1} alt="" />
             <img src={otherImg2} alt="" />

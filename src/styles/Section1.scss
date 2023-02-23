@@ -86,3 +86,43 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .section1Container {
+    height: auto;
+    padding: 36px 0;
+  }
+
+  .section1 {
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .right {
+    padding: 4%;
+    .main {
+      width: 100%;
+      max-width: 532px;
+    }
+
+    .otherImgs {
+      width: 100%;
+
+      img {
+        min-width: 50px;
+      }
+    }
+  }
+
+  .section1 .left {
+    padding: 0 8%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      text-align: center;
+    }
+  }
+}
