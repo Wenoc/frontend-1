@@ -62,3 +62,38 @@
   left: 0;
   top: 0;
 }
+
+@media (max-width: 1200px) {
+  .section2Container {
+    height: auto;
+  }
+
+  .section2Container .section2 {
+    flex-direction: column;
+    height: auto;
+    max-width: 1200px;
+
+    .left {
+      padding: 48px 4%;
+      align-items: center;
+      text-align: center;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .section2Container .section2 .imgPlace {
+    height: 400px;
+
+    .img {
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
