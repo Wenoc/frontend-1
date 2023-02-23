@@ -45,4 +45,22 @@
   align-items: center;
   gap: 16px;
   margin-top: 48px;
+}
+
+@media (max-width: 1200px) {
+  .section3Container {
+    height: auto;
+  }
+  .section3 {
+    height: auto;
+    padding: 8% 4%;
+  }
+  .images {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .images img {
+    min-width: 50px;
+    width: 48%;
+  }
 }/*# sourceMappingURL=Section3.css.map */

@@ -4,4 +4,10 @@
   align-items: center;
   gap: 8px;
   margin-top: 64px;
+}
+
+@media (max-width: 1200px) {
+  .line img {
+    max-width: 40%;
+  }
 }/*# sourceMappingURL=Line.css.map */
