@@ -42,6 +42,10 @@
   line-height: 1.6;
 }
 
+.sliderTextBottom {
+  display: none;
+}
+
 .sliderButtonsContainer {
   position: absolute;
   bottom: 0;
@@ -73,4 +77,38 @@
   border-radius: 50%;
   border: 2px solid white;
   background-color: #b50014;
+}
+
+@media (max-width: 700px) {
+  .sliderButtonsContainer {
+    display: none;
+  }
+  .sliderText {
+    display: none !important;
+  }
+  .slider {
+    height: 400px;
+  }
+  .sliderTextBottom {
+    background-color: #0d0d0d;
+    color: #fff;
+    height: auto;
+    padding: 32px 8%;
+    text-align: center;
+    width: auto;
+    display: block;
+  }
+  .sliderTextBottom .sliderTitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .sliderTextBottom .sliderContent {
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  .sliderContainer {
+    height: auto;
+  }
 }/*# sourceMappingURL=Slider.css.map */

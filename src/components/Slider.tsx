@@ -70,6 +70,14 @@ function Slider() {
           </div>
         </div>
       </div>
+      <div className="sliderTextBottom">
+        <p className="sliderTitle">Heiko Brath Metzgermeister</p>
+        <p className="sliderContent">
+          Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
+          argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol
+          Spritz probatus pertinax.
+        </p>
+      </div>
     </div>
   );
 }
