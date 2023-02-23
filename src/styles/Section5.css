@@ -171,4 +171,49 @@
   color: #828282;
   font-size: 13px;
   font-weight: 700;
+}
+
+@media (max-width: 1220px) {
+  .section5 {
+    width: 100%;
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+  .section5 .sec1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 48px;
+  }
+  .section5 .sec1 .left img {
+    width: 100%;
+  }
+  .section5 .sec1 .right {
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    gap: 48px;
+  }
+  .section5 .sec2 {
+    flex-direction: column;
+  }
+  .section5 .sec3 .middle {
+    width: 100%;
+    max-width: 414px;
+  }
+  .section5 .sec3 .title {
+    max-width: 400px;
+  }
+  .section5 .sec3 .reviews .side {
+    display: none;
+  }
+  .section5 .sec3 .reviews .arrowl {
+    bottom: -60px;
+    left: 38%;
+  }
+  .section5 .sec3 .reviews .arrowr {
+    bottom: -60px;
+    right: 38%;
+  }
 }/*# sourceMappingURL=Section5.css.map */

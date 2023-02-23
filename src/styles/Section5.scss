@@ -199,3 +199,62 @@
     }
   }
 }
+
+@media (max-width: 1220px) {
+  .section5 {
+    width: 100%;
+    padding-right: 4%;
+    padding-left: 4%;
+    .sec1 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 48px;
+
+      .left {
+        img {
+          width: 100%;
+        }
+      }
+
+      .right {
+        justify-content: center;
+        align-items: center;
+        max-width: 400px;
+        gap: 48px;
+      }
+    }
+
+    .sec2 {
+      flex-direction: column;
+    }
+
+    .sec3 {
+      .middle {
+        width: 100%;
+        max-width: 414px;
+      }
+
+      .title {
+        max-width: 400px;
+      }
+
+      .reviews {
+        .side {
+          display: none;
+        }
+
+        .arrowl {
+          bottom: -60px;
+          left: 38%;
+        }
+
+        .arrowr {
+          bottom: -60px;
+          right: 38%;
+        }
+      }
+    }
+  }
+}
