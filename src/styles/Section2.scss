@@ -1,11 +1,12 @@
-@import "./Variables/Variables.scss";
+@import "./Variables.scss";
 
-.section2Container {
+.section-container {
   height: 640px;
   background-color: $red-2;
   overflow: hidden;
+  position: relative;
 
-  .section2 {
+  .section {
     height: 100%;
     max-width: 1100px;
     margin: 0 auto;
@@ -13,10 +14,19 @@
     justify-content: center;
     align-items: center;
 
-    .imgPlace {
+    .img-place {
       height: 100%;
       width: 100%;
       position: relative;
+
+      .img {
+        height: 100%;
+        width: 1000px;
+        background: url("../assets/section2Img.jpg") no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
     }
 
     .left {
@@ -28,6 +38,7 @@
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
+      padding: 50px;
 
       button {
         height: 46px;
@@ -43,6 +54,10 @@
         margin-top: 32px;
         margin-bottom: 48px;
         line-height: 2.2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
 
       .title {
@@ -55,21 +70,12 @@
   }
 }
 
-.img {
-  height: 100%;
-  width: 1000px;
-  background: url("../assets/section2Img.jpg") no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
 @media (max-width: 1200px) {
-  .section2Container {
+  .section-container {
     height: auto;
   }
 
-  .section2Container .section2 {
+  .section-container .section {
     flex-direction: column;
     height: auto;
     max-width: 1200px;
@@ -78,23 +84,55 @@
       padding: 48px 4%;
       align-items: center;
       text-align: center;
+    }
 
-      ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .img-place {
+      height: 400px;
+
+      .img {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
       }
     }
   }
+}
 
-  .section2Container .section2 .imgPlace {
-    height: 400px;
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 9999;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 
-    .img {
-      width: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  }
+.popup h1 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.popup input {
+  height: 36px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.popup button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: $red-2;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
 }
