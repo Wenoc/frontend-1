@@ -4,7 +4,7 @@
 }
 
 .nav {
-  max-width: 1300px;
+  padding: 0 6%;
   margin: 0 auto;
   height: 90px;
   display: flex;
@@ -18,6 +18,10 @@
 }
 .nav .hamburger {
   display: none;
+}
+.nav .hamburgerMenu {
+  display: none;
+  width: 100%;
 }
 .nav .right {
   display: flex;
@@ -79,6 +83,7 @@
 @media (max-width: 1400px) {
   .nav {
     padding: 0 24px;
+    position: relative;
   }
   .opentime {
     padding-right: 24px;
@@ -89,7 +94,24 @@
   .nav .hamburger {
     display: block;
   }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  .hamburgerMenu {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 1;
+  }
 }
+.hamburgerActive {
+  display: block !important;
+}
+
+.hamburgerInActive {
+  display: none !important;
+}
+
 @media (max-width: 660px) {
   .logo {
     height: 120px;

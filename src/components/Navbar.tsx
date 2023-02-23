@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import clock from "../assets/clock.svg";
 import logo from "../assets/logo.png";
 import pdf from "../assets/pdf.png";
 import "../styles/Navbar.css";
 
 import hamburger from "../assets/hamburger.svg";
+import HamburgerMenu from "./HamburgerMenu";
 
 function Navbar() {
+  const [hamburgerActive, setHamburgerActive] = useState(false);
+
+  const handleHamburgerClick = () => {
+    setHamburgerActive(!hamburgerActive);
+  };
+
   return (
     <div className="navContainer">
       <div className="nav">
@@ -43,8 +50,15 @@ function Navbar() {
             <a href="#">download</a>
           </div>
 
-          <div className="hamburger">
+          <div className="hamburger" onClick={handleHamburgerClick}>
             <img src={hamburger} alt="" height={50} width={50} />
+          </div>
+          <div
+            className={`hamburgerMenu ${
+              hamburgerActive ? "hamburgerActive" : "hamburgerInActive"
+            }`}
+          >
+            <HamburgerMenu />
           </div>
         </div>
       </div>

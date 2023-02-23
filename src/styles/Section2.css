@@ -33,6 +33,7 @@
   border-radius: 40px;
   font-weight: 400;
   font-size: 16px;
+  cursor: pointer;
 }
 .section2Container .section2 .left ul {
   margin-top: 32px;

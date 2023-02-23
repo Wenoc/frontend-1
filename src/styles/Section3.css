@@ -38,6 +38,9 @@
   border-radius: 40px;
   margin-top: 36px;
 }
+.section3 .btn:hover {
+  cursor: pointer;
+}
 
 .images {
   display: flex;
