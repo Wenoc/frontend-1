@@ -3,7 +3,7 @@ import "../styles/Section4.css";
 
 function Section4() {
   return (
-    <div className="section4Container">
+    <div className="section4Container redSection">
       <div className="section4">
         <div className="imgPlace">
           <div className="img"></div>

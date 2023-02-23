@@ -1,0 +1,15 @@
+.light-mode .text-color {
+  color: #0d0d0d !important;
+}
+.light-mode .redSection {
+  background-color: #c94141;
+}
+.light-mode .reviewCard {
+  background-color: #aaa2a2 !important;
+}
+.light-mode .standard-bg {
+  background-color: #d8d8d8;
+}
+.light-mode .reviewCardSide {
+  background-color: #d0c6c6 !important;
+}/*# sourceMappingURL=light-mode.css.map */

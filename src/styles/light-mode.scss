@@ -1,0 +1,23 @@
+@import "./Variables/Variables.scss";
+
+.light-mode {
+  .text-color {
+    color: $light-font !important;
+  }
+
+  .redSection {
+    background-color: $light-red;
+  }
+
+  .reviewCard {
+    background-color: $light-card !important;
+  }
+
+  .standard-bg {
+    background-color: $light-background;
+  }
+
+  .reviewCardSide {
+    background-color: $light-card-2 !important;
+  }
+}

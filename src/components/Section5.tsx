@@ -40,14 +40,14 @@ function Section5() {
   useEffect(() => {}, [reviewList]);
 
   return (
-    <div className="section5Container">
+    <div className="section5Container standard-bg">
       <div className="section5">
         <div className="sec1">
           <div className="left">
             <img src={logo2} alt="" />
           </div>
 
-          <div className="right">
+          <div className="right text-color">
             <p className="text">
               Metzgerei Brath ist Mitglied im Genussnetzwerk
             </p>
@@ -56,7 +56,7 @@ function Section5() {
         </div>
         <Line />
         <div className="sec2">
-          <div className="left">Auszeichnungen</div>
+          <div className="left text-color">Auszeichnungen</div>
           <div className="images">
             <div className="imgCon">
               <img src={nag1} alt="" />
@@ -79,12 +79,12 @@ function Section5() {
         <Line />
         <div className="sec3">
           <p className="subtitle">Empfehlungs</p>
-          <p className="title">Was die Leute über uns sagen</p>
+          <p className="title text-color">Was die Leute über uns sagen</p>
 
           <div className="reviews">
-            <div className="side">
-              <p className="content">{reviewList[0].review}</p>
-              <p className="name">{reviewList[0].name}</p>
+            <div className="side reviewCardSide">
+              <p className="content text-color">{reviewList[0].review}</p>
+              <p className="name text-color">{reviewList[0].name}</p>
             </div>
             <div className="middleCon">
               <img
@@ -93,11 +93,11 @@ function Section5() {
                 src={arrowL}
                 alt=""
               />
-              <div className="middle">
+              <div className="middle reviewCard">
                 <img src={reviewImg} alt="" />
                 <img className="stars" src={stars} alt="" />
-                <p className="content">{reviewList[1].review}</p>
-                <p className="name">{reviewList[1].name}</p>
+                <p className="content text-color">{reviewList[1].review}</p>
+                <p className="name text-color">{reviewList[1].name}</p>
                 <img className="quotes" src={quotes} alt="" />
               </div>
               <img
@@ -107,9 +107,9 @@ function Section5() {
                 alt=""
               />
             </div>
-            <div className="side">
-              <p className="content">{reviewList[2].review}</p>
-              <p className="name">{reviewList[2].name}</p>
+            <div className="side reviewCardSide">
+              <p className="content text-color">{reviewList[2].review}</p>
+              <p className="name text-color">{reviewList[2].name}</p>
             </div>
           </div>
         </div>

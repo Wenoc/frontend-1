@@ -129,7 +129,6 @@ body.overflow-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
 }
 
 .section2::before {

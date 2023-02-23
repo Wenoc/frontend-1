@@ -7,9 +7,9 @@ import "../styles/Section1.css";
 
 function Section1() {
   return (
-    <div className="section1Container">
+    <div className="section1Container standard-bg">
       <div className="section1">
-        <div className="left">
+        <div className="left text-color">
           <p className="title">Dry aged</p>
           <p className="subtitle">Alte Wutz, Dry Aged</p>
 

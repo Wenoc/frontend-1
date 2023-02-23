@@ -38,7 +38,7 @@ function Section2() {
   }, [showPopup]);
 
   return (
-    <div className="section2Container">
+    <div className="section2Container redSection">
       {showPopup && (
         <div className="popup">
           <h1>Popup</h1>

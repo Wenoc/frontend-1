@@ -6,7 +6,7 @@ import social from "../assets/social.png";
 
 function Footer() {
   return (
-    <div className="footerContainer">
+    <div className="footerContainer redSection">
       <div className="footer">
         <div className="up">
           <div className="left">

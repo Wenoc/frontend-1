@@ -9,8 +9,8 @@ import Line from "./Line";
 
 function Section3() {
   return (
-    <div className="section3Container">
-      <div className="section3">
+    <div className="section3Container standard-bg">
+      <div className="section3 text-color">
         <p className="title">Das Handwerk</p>
         <p className="subtitle">alles über unsere Hausgemachte Produkte</p>
 
