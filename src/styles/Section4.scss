@@ -51,3 +51,31 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .section4Container {
+    height: auto;
+  }
+
+  .section4 {
+    height: auto;
+    flex-direction: column-reverse;
+    max-width: none;
+
+    .imgPlace {
+      height: 400px;
+      .img {
+        width: 100%;
+        background-position: color;
+        background-size: cover;
+
+        left: 0;
+      }
+    }
+
+    .right {
+      text-align: center;
+      padding: 32px 12%;
+    }
+  }
+}

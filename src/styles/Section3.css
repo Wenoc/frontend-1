@@ -58,9 +58,10 @@
   .images {
     flex-wrap: wrap;
     width: 100%;
+    max-width: 600px;
   }
   .images img {
     min-width: 50px;
-    width: 48%;
+    width: 44%;
   }
 }/*# sourceMappingURL=Section3.css.map */

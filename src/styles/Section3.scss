@@ -64,10 +64,11 @@
   .images {
     flex-wrap: wrap;
     width: 100%;
+    max-width: 600px;
 
     img {
       min-width: 50px;
-      width: 48%;
+      width: 44%;
     }
   }
 }

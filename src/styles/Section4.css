@@ -41,4 +41,28 @@
 }
 .section4 .right .content {
   font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+  .section4Container {
+    height: auto;
+  }
+  .section4 {
+    height: auto;
+    flex-direction: column-reverse;
+    max-width: none;
+  }
+  .section4 .imgPlace {
+    height: 400px;
+  }
+  .section4 .imgPlace .img {
+    width: 100%;
+    background-position: color;
+    background-size: cover;
+    left: 0;
+  }
+  .section4 .right {
+    text-align: center;
+    padding: 32px 12%;
+  }
 }/*# sourceMappingURL=Section4.css.map */
