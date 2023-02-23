@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo2 from "../assets/logo2.png";
 import "../styles/Section5.css";
 import Line from "./Line";
@@ -16,7 +16,29 @@ import nag2 from "../assets/nagrada/nagrada2.svg";
 import nag3 from "../assets/nagrada/nagrada3.svg";
 import nag4 from "../assets/nagrada/nagrada4.svg";
 
+import reviews from "../assets/reviews.json";
+
 function Section5() {
+  const [reviewList, setReviews] = useState(reviews);
+
+  const moveReview = (direction: number) => {
+    const newReviews = [...reviewList];
+
+    if (direction == 1) {
+      newReviews[0] = reviewList[1];
+      newReviews[1] = reviewList[2];
+      newReviews[2] = reviewList[0];
+    } else if (direction == -1) {
+      newReviews[0] = reviewList[2];
+      newReviews[1] = reviewList[0];
+      newReviews[2] = reviewList[1];
+    }
+
+    setReviews(newReviews);
+  };
+
+  useEffect(() => {}, [reviewList]);
+
   return (
     <div className="section5Container">
       <div className="section5">
@@ -61,35 +83,33 @@ function Section5() {
 
           <div className="reviews">
             <div className="side">
-              <p className="content">
-                Achtung fur atine indoctum complectitur HugoClub Mate mea
-                meliore denique nominavi id. Ohrwurm expetenda nam an, his ei
-                Reise euismod assentior.
-              </p>
-              <p className="name">Rene Weinstein</p>
+              <p className="content">{reviewList[0].review}</p>
+              <p className="name">{reviewList[0].name}</p>
             </div>
             <div className="middleCon">
-              <img className="arrowl" src={arrowL} alt="" />
+              <img
+                className="arrowl"
+                onClick={() => moveReview(-1)}
+                src={arrowL}
+                alt=""
+              />
               <div className="middle">
                 <img src={reviewImg} alt="" />
                 <img className="stars" src={stars} alt="" />
-                <p className="content">
-                  Wiener Schnitzel amet, consectetur Handtasche elit, sed do
-                  eiusmod tempor Stuttgart ut labore et dolore magna Luftballons
-                  Ut Turnbeutel nostrud exercitation ullamco.
-                </p>
-                <p className="name">Halling Tobias</p>
+                <p className="content">{reviewList[1].review}</p>
+                <p className="name">{reviewList[1].name}</p>
                 <img className="quotes" src={quotes} alt="" />
               </div>
-              <img className="arrowr" src={arrowR} alt="" />
+              <img
+                className="arrowr"
+                onClick={() => moveReview(1)}
+                src={arrowR}
+                alt=""
+              />
             </div>
             <div className="side">
-              <p className="content">
-                Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
-                Schnitzel aute irure dolor in reprehenderit Guten Tag mollit
-                anim Stuttgart.
-              </p>
-              <p className="name">Maria Kartofeln</p>
+              <p className="content">{reviewList[2].review}</p>
+              <p className="name">{reviewList[2].name}</p>
             </div>
           </div>
         </div>

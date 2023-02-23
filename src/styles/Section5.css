@@ -105,9 +105,15 @@
   position: absolute;
   right: -40px;
 }
+.section5 .sec3 .middleCon .arrowr:hover {
+  cursor: pointer;
+}
 .section5 .sec3 .middleCon .arrowl {
   position: absolute;
   left: -40px;
+}
+.section5 .sec3 .middleCon .arrowl:hover {
+  cursor: pointer;
 }
 .section5 .sec3 .middle {
   background-color: #292929;

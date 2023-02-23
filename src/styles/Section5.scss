@@ -121,9 +121,16 @@
         position: absolute;
         right: -40px;
       }
+      .arrowr:hover {
+        cursor: pointer;
+      }
+
       .arrowl {
         position: absolute;
         left: -40px;
+      }
+      .arrowl:hover {
+        cursor: pointer;
       }
     }
 
